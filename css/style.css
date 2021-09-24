@@ -1311,6 +1311,13 @@ pre {
     -webkit-box-ordinal-group: 12;
     -ms-flex-order: 11;
     order: 11; }
+
+.mytext{
+  color: #fff;
+}
+
+  
+
   .order-xl-12 {
     -webkit-box-ordinal-group: 13;
     -ms-flex-order: 12;
@@ -3656,7 +3663,9 @@ input[type="button"].btn-block {
 .card-header-pills {
   margin-right: -0.625rem;
   margin-left: -0.625rem; }
-
+.overlay{
+  background-color: #5C4233 !important;
+}
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -7311,7 +7320,7 @@ h1, h2, h3, h4, h5,
   top: 10px; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000 !important;
+      background: #fff !important;
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-brand {
@@ -7704,11 +7713,11 @@ h1, h2, h3, h4, h5,
     padding: 30px;
     color: rgba(0, 0, 0, 0.7); }
     .ftco-intro .block-18.color-1 {
-      background: #f86f2d; }
+      background: #5C4233; }
     .ftco-intro .block-18.color-2 {
-      background: #fa8f3d; }
+      background: #573f02; }
     .ftco-intro .block-18.color-3 {
-      background: #faaa3a; }
+      background: #533526; }
     .ftco-intro .block-18 .text strong {
       font-size: 60px;
       color: #000;
