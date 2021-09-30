@@ -26,14 +26,15 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="boot/font/flaticon.css">
   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
+    <img src="images/pwfu.jpg" class="logoedit" alt="">
+    <div class="nav-color container">
+      <a class="navbar-brand" style="display: none;" href="index.html">Purewish</a>
       
-      <!-- <a class="navbar-brand" href="index.html">PureWish</a> -->
-      <img src="images/pwfu.jpg" alt="" height="150x">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -42,8 +43,8 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="causes.html" class="nav-link">Project</a></li>
-          <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Project</a></li>
+          <li class="nav-item"><a href="sponsored.html" class="nav-link">Sponsor a Child</a></li>
           <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
           <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -53,9 +54,10 @@
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/bg_7.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('images/about.png');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
+
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Purewish Foundation Uganda</h1>
@@ -66,24 +68,24 @@
         </div>
       </div>
     </div>
-
+   
     <section class="ftco-counter ftco-intro" id="section-counter">
-    	<div class="container">
+    	<div class="container"> 
     		<div class="row no-gutters">
     			<div class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 color-1 align-items-stretch">
-              <div class="text">
-              	<span class="mytext">Served Over</span>
-                <strong class="number" data-number="167">0</strong>
-                <span class="mytext">Children & Women in Uganda</span>
+              <div class="text"> 
+              	<span id="white-text">Served Over</span>
+                <strong class="number" id="white-text" data-number="167">0</strong>
+                <span id="white-text1">Children & Women in Uganda</span>
               </div>
             </div>
           </div>
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 color-2 align-items-stretch">
               <div class="text">
-              	<h3 class="mb-4 mytext">You too can!</h3>
-              	<p class="mytext">You have not lived until you have done something for someone who can never repay you.</p>
+              	<h3 class="mb-4">You too can!</h3>
+              	<p>You have not lived until you have done something for someone who can never repay you.</p>
               	<p><a href="#" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
               </div>
             </div>
@@ -91,8 +93,8 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18 color-3 align-items-stretch">
               <div class="text">
-              	<h3 class="mb-4 mytext" >Be a Volunteer</h3>
-              	<p class="mytext">Alone we can do so little; together we can do so much. Teamwork begins by us and here...</p>
+              	<h3 class="mb-4" id="white-text">Be a Volunteer</h3>
+              	<p id="white-text1">Alone we can do so little; together we can do so much. Teamwork begins by us and here...</p>
               	<p><a href="#" class="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
               </div>
             </div>
@@ -104,12 +106,13 @@
     <section class="ftco-section">
     	<div class="container">
     		<div class="row">
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <div class="col-md-8 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 d-flex services p-3 py-4 d-block">
-              <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+             
+              <div class="icon d-flex mb-3"><span class="flaticon-donation"></span></div>
               <div class="media-body pl-4">
-                <h3 class="heading">Make Donation</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Our Vision</h3>
+                <p>To actively engage in empowering and Spiritual mentorship to children, youths and women for global change and leading sustainable development..</p>
               </div>
             </div>      
           </div>
@@ -117,20 +120,23 @@
             <div class="media block-6 d-flex services p-3 py-4 d-block">
               <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
               <div class="media-body pl-4">
-                <h3 class="heading">Become A Volunteer</h3>
-                <p>Alone we can do so little; together we can do so much.</p>
+                <h3 class="heading">Our Mission</h3>
+                <p>To empower and transform humanity to build for the future</p>
               </div>
             </div>      
           </div>
-          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+          <!-- <div class="col-md-4 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 d-flex services p-3 py-4 d-block">
               <div class="icon d-flex mb-3"><span class="flaticon-donation"></span></div>
               <div class="media-body pl-4">
-                <h3 class="heading">Sponsorship</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <h3 class="heading">Our Core Values</h3>
+                <li>Stewardship</li>
+                <li>Accountability</li>
+                <li>Mentorship</li>
+                <li>Innovation and Creativity</li>
               </div>
             </div>    
-          </div>
+          </div> -->
         </div>
     	</div>
     </section>
@@ -141,7 +147,7 @@
     		<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-5 heading-section ftco-animate text-center">
             <h2 class="mb-4">Our Projects</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis, repellat molestiae molestias aliquam! Fugiat, rerum quod soluta a quas nostrum quibusdam ad excepturi voluptate obcaecati, ab corrupti voluptatem!</p>
+           <p>Offereing amazing projects which is bringing lots of transformation in the lives of the young people around the communities.</p>
           </div>
         </div>
     		<div class="row">
@@ -149,95 +155,69 @@
     				<div class="carousel-cause owl-carousel">
 	    				<div class="item">
 	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/kids.jpg);"></a>
+		    					<a href="projects.html" class="img" style="background-image: url(images/cause2.JPG);"></a>
 		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis, repellat molestiae molestias aliquam</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
+		    						<h5><a href="projects.html">Providing education to  the orphans.</a></h5>
+		    						<p> </p>
+		    						<!-- <span class="donation-time mb-3 d-block">Last donatio n 1w ago</span> -->
+		                <!-- <div class="progress custom-progress-success">
 		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
+		                </div> -->
+		                <!-- <span class="fund-raised d-block">$12,000 raised of $30,000</span> -->
+		    					</div>
+		    				</div>
+	    				</div>
+              <div class="item">
+	    					<div class="cause-entry">
+		    					<a href="projects.html" class="img" style="background-image: url(images/cause6.JPG);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h5><a href="projects.html">Education for all and all.</a></h5>
+		    						<p> </p>
+		    						<!-- <span class="donation-time mb-3 d-block">Last donation 1w ago</span> -->
+		                <!-- <div class="progress custom-progress-success">
+		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+		                </div> -->
 		                <!-- <span class="fund-raised d-block">$12,000 raised of $30,000</span> -->
 		    					</div>
 		    				</div>
 	    				</div>
 	    				<div class="item">
 	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/kidscamera.jpg);"></a>
+		    					<a href="projects.html" class="img" style="background-image: url(images/1.JPG);"></a>
 		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis, repellat molestiae molestias aliquam</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
+		    						<h5><a href="projects.html">Supporting vulnerable widows </a></h5>
+		    						<p> </p>
+		    						<!-- <span class="donation-time mb-3 d-block">Last donation 1w ago</span> -->
+		                <!-- <div class="progress custom-progress-success">
 		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
+		                </div> -->
 		                <!-- <span class="fund-raised d-block">$12,000 raised of $30,000</span> -->
 		    					</div>
 		    				</div>
 	    				</div>
-	    				<div class="item">
+              <div class="item">
 	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/kids.jpg);"></a>
+		    					<a href="projects.html" class="img" style="background-image: url(images/cause1.JPG);"></a>
 		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis, repellat molestiae molestias aliquam</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
+		    						<h5><a href="projects.html">Vocational Trainings skillsets.</a></h5>
+		    						<p> </p>
+		    						<!-- <span class="donation-time mb-3 d-block">Last donation 1w ago</span> -->
+		                <!-- <div class="progress custom-progress-success">
 		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
+		                </div> -->
 		                <!-- <span class="fund-raised d-block">$12,000 raised of $30,000</span> -->
 		    					</div>
 		    				</div>
 	    				</div>
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/kidscamera.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis, repellat molestiae molestias aliquam</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <!-- <span class="fund-raised d-block">$12,000 raised of $30,000</span> -->
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/kids.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis, repellat molestiae molestias aliquam</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <!-- <span class="fund-raised d-block">$12,000 raised of $30,000</span> -->
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/kidscamera.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis, repellat molestiae molestias aliquam</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <!-- <span class="fund-raised d-block">$12,000 raised of $30,000</span> -->
-		    					</div>
-		    				</div>
-	    				</div>
+             
+	    			
     				</div>
     			</div>
     		</div>
     	</div>
     </section>
 
-    <section class="ftco-section">
+    <section class="ftco-section phone">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
@@ -249,9 +229,9 @@
         	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
         		<div class="staff">
         			<div class="d-flex mb-4">
-        				<div class="img" style="background-image: url(images/sedu.png);"></div>
+        				<div class="img" style="background-image: url(images/fred.png);"></div>
         				<div class="info ml-4">
-        					<h3><a href="teacher-single.html">Fredrick</a></h3>
+        					<h3><a href="#">Fredrick</a></h3>
         					<span class="position">CEO</span>
         					<div class="text">
 		        				<!-- <p>Donated <span>$300</span> for <a href="#">Children Needs Food</a></p> -->
@@ -263,9 +243,9 @@
         	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
         		<div class="staff">
         			<div class="d-flex mb-4">
-        				<div class="img" style="background-image: url(images/sedu.png);"></div>
+        				<div class="img" style="background-image: url(images/naomi.jpg);"></div>
         				<div class="info ml-4">
-        					<h3><a href="teacher-single.html">Brian </a></h3>
+        					<h3><a href="#">Brian </a></h3>
         					<span class="position">Pastor</span>
         					<div class="text">
 		        				<!-- <p>Donated <span>$150</span> for <a href="#">Children Needs Food</a></p> -->
@@ -277,7 +257,7 @@
         	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
         		<div class="staff">
         			<div class="d-flex mb-4">
-        				<div class="img" style="background-image: url(images/sedu.png);"></div>
+        				<div class="img" style="background-image: url(images/fred.png);"></div>
         				<div class="info ml-4">
         					<h3><a href="teacher-single.html">Magrate </a></h3>
         					<span class="position">Social Worker</span>
@@ -292,46 +272,48 @@
       </div>
     </section>
 
+    
+
     <section class="ftco-gallery">
     	<div class="d-md-flex">
-	    	<a href="images/kidscamera.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/kidscamera.jpg);">
+	    	<a href="images/front/1.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/front/1.jpg);">
 	    		<div class="icon d-flex justify-content-center align-items-center">
 	    			<span class="icon-search"></span>
 	    		</div>
 	    	</a>
-        <a href="images/kids.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/kids.jpg);">
+        <a href="images/front/2.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/front/2.JPG);">
 	    		<div class="icon d-flex justify-content-center align-items-center">
 	    			<span class="icon-search"></span>
 	    		</div>
 	    	</a>
-        <a href="images/kidscamera.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/kidscamera.jpg);">
+        <a href="images/front/3.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/front/3.JPG);">
 	    		<div class="icon d-flex justify-content-center align-items-center">
 	    			<span class="icon-search"></span>
 	    		</div>
 	    	</a>
-        <a href="images/kids.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/kids.jpg);">
+        <a href="images/front/4.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/front/4.JPG);">
 	    		<div class="icon d-flex justify-content-center align-items-center">
 	    			<span class="icon-search"></span>
 	    		</div>
 	    	</a>
     	</div>
     	<div class="d-md-flex">
-        <a href="images/kids.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/kids.jpg);">
+        <a href="images/front/5.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/front/5.JPG);">
 	    		<div class="icon d-flex justify-content-center align-items-center">
 	    			<span class="icon-search"></span>
 	    		</div>
 	    	</a>
-	    	<a href="images/kidscamera.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/kidscamera.jpg);">
+	    	<a href="images/front/6.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/front/6.JPG);">
 	    		<div class="icon d-flex justify-content-center align-items-center">
 	    			<span class="icon-search"></span>
 	    		</div>
 	    	</a>
-        <a href="images/kids.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/kids.jpg);">
+        <a href="images/front/7.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/front/7.JPG);">
 	    		<div class="icon d-flex justify-content-center align-items-center">
 	    			<span class="icon-search"></span>
 	    		</div>
 	    	</a>
-	    	<a href="images/kidscamera.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/kidscamera.jpg);">
+	    	<a href="images/front/8.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/front/8.JPG);">
 	    		<div class="icon d-flex justify-content-center align-items-center">
 	    			<span class="icon-search"></span>
 	    		</div>
@@ -343,57 +325,46 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section ftco-animate text-center">
-            <h2 class="mb-4">Recent from blog</h2>
-            <p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis, repellat molestiae molestias aliquam</p></p>
+            <h2 class="mb-4">Our sponsored kids</h2>
+            <p><p>Meet our kids benefiting from the sponsorship program</p></p>
           </div>
         </div>
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/kids.jpg');">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/acan.jpg');">
               </a>
               <div class="text p-4 d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Sept 10, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-3"><a href="#">Hurricane Irma has devastated Florida</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis.</p>
+                <h3 class="heading mt-3"><a href="#">Acen Fiona</a></h3>
+                <p>Acen Fiona is a 13 year old girl very outstanding and intelligent.</p>
+   
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry align-self-stretch">
+              <a href="sponsored.html" class="block-20" style="background-image: url('images/sponsored/morris.jpg');">
+              </a>
+              <div class="text p-4 d-block">
+                <h3 class="heading mt-3"><a href="#">Morris </a></h3>
+                <p>Morris is bright, happy and very determined young boy. </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/kidscamera.jpg');">
+              <a href="sponsored.html" class="block-20" style="background-image: url('images/sponsored/akellosarah.jpg');">
               </a>
               <div class="text p-4 d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Sept 10, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-3"><a href="#">Hurricane Irma has devastated Florida</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis.</p>
+                <h3 class="heading mt-3"><a href="#">Akello Sarah</a></h3>
+                <p>Sarah is a 10 year old girl in Primary Three. She loves playing.</p>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/kids.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<div class="meta mb-3">
-                  <div><a href="#">Sept 10, 2021</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading mt-3"><a href="#">Hurricane Irma has devastated Florida</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsa corporis.</p>
-              </div>
+              <!-- <input type="button" name="" value="Click for More" id=""> -->
             </div>
           </div>
         </div>
+        <p><a href="sponsored.html" class="btn btn-white px-3 py-2 mt-2" style="width: 170px; border-radius: 20px;">View More</a></p>
       </div>
     </section>
 

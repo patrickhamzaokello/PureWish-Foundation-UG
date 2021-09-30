@@ -1,0 +1,85 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?aee8e664907b773a5711687062bb1fc8") format("truetype"),
+url("./flaticon.woff?aee8e664907b773a5711687062bb1fc8") format("woff"),
+url("./flaticon.woff2?aee8e664907b773a5711687062bb1fc8") format("woff2"),
+url("./flaticon.eot?aee8e664907b773a5711687062bb1fc8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?aee8e664907b773a5711687062bb1fc8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "church": "\f101",
+    "cross": "\f102",
+    "grandfather": "\f103",
+    "old": "\f104",
+    "grandmother": "\f105",
+    "pray": "\f106",
+    "worship": "\f107",
+    "calendar": "\f108",
+    "event": "\f109",
+    "baptism": "\f10a",
+    "eye": "\f10b",
+    "binoculars": "\f10c",
+    "focus": "\f10d",
+    "target": "\f10e",
+    "target-1": "\f10f",
+);
+
+.flaticon-church:before {
+    content: map-get($flaticon-map, "church");
+}
+.flaticon-cross:before {
+    content: map-get($flaticon-map, "cross");
+}
+.flaticon-grandfather:before {
+    content: map-get($flaticon-map, "grandfather");
+}
+.flaticon-old:before {
+    content: map-get($flaticon-map, "old");
+}
+.flaticon-grandmother:before {
+    content: map-get($flaticon-map, "grandmother");
+}
+.flaticon-pray:before {
+    content: map-get($flaticon-map, "pray");
+}
+.flaticon-worship:before {
+    content: map-get($flaticon-map, "worship");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-event:before {
+    content: map-get($flaticon-map, "event");
+}
+.flaticon-baptism:before {
+    content: map-get($flaticon-map, "baptism");
+}
+.flaticon-eye:before {
+    content: map-get($flaticon-map, "eye");
+}
+.flaticon-binoculars:before {
+    content: map-get($flaticon-map, "binoculars");
+}
+.flaticon-focus:before {
+    content: map-get($flaticon-map, "focus");
+}
+.flaticon-target:before {
+    content: map-get($flaticon-map, "target");
+}
+.flaticon-target-1:before {
+    content: map-get($flaticon-map, "target-1");
+}
