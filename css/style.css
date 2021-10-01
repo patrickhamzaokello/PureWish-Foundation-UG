@@ -44,19 +44,20 @@
  /* code here*/
   .mynav{
     margin-top: -60px;
-    background-color: inherit !important;
+    background-color: white !important;
+    
   }
   .navedit{
     background-color: none !important;
   }
 #white-text{
-  color: rgb(241, 9, 9);
+  color: rgb(255, 255, 255);
   align-items: center;
   text-align: center;
 }
 
 #white-text1{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 #white-text1 li{
@@ -95,8 +96,12 @@
     display: none;
     /* position: relative; */
     margin-right: -100px;
-    background-color: green;
+    /* background-color: green; */
 
+  }
+  .nav-color{
+    position:relative;
+    background-color: rgb(240, 224, 224);
   }
   .navbar-brand{
     display: block;
@@ -108,11 +113,32 @@
   }
 }
 .nav-color {
-  background-color: #533526;
-  height: 50px;
-  width: 38% !important;
+  /* background-color: #533526; */
+  /* height: 50px; */
+  /* width: 38% !important; */
   border-radius: 10px;
   
+}
+.middle-home{
+  background-color: black !important;
+}
+.center-image{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.calvin{
+  margin-left: auto;
+  width: 300px !important;
+}
+.naomi{
+  margin-left: 100px;
+}
+.grace{
+  width: 160px;
+}
+.title-color{
+  color: var(--orange);
 }
 .mycols{
   background-color: #5C4233;
@@ -3436,7 +3462,9 @@ input[type="button"].btn-block {
   flex-grow: 1;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center; 
+  /* color: white; */
+}
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -6454,9 +6482,18 @@ button.bg-dark:focus {
 .my-auto {
   margin-bottom: auto !important; }
 
+
+  /* menu bar  on mobile */
+  /* menu bar on scroll color   */
 .ml-auto,
 .mx-auto {
-  margin-left: auto !important; }
+  margin-left: auto !important; 
+  background-color: rgba(138, 13, 13, 0.733);
+  position: relative;
+  border-radius: 10px;
+  /* width: 0%; */
+  
+}
 
 @media (min-width: 576px) {
   .m-sm-0 {
@@ -7835,7 +7872,7 @@ h1, h2, h3, h4, h5,
     .ftco-intro .block-18.color-1 {
       background: #5C4233; }
     .ftco-intro .block-18.color-2 {
-      background: #d4e208; }
+      background: #753e0a; }
     .ftco-intro .block-18.color-3 {
       background: #533526; }
     .ftco-intro .block-18 .text strong {
