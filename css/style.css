@@ -126,6 +126,10 @@
   border-radius: 10px;
   
 }
+.sponsorchild{
+  background-color: gainsboro !important;
+  padding: 10px;
+}
 .middle-home{
   background-color: black !important;
 }
