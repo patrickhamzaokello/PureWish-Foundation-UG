@@ -646,6 +646,10 @@ pre {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
+  
+
+
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
@@ -658,6 +662,21 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
+
+      @media (max-width: 1024px) {
+        .companylogo {
+          background: white;        
+        } 
+
+          .slider-text p {
+            font-size: 20px !important;
+          }
+
+          .hero-wrap{
+            background: white !important;
+          }
+        
+        }
 
 .container-fluid {
   width: 100%;
@@ -7536,13 +7555,36 @@ h1, h2, h3, h4, h5,
 
 
 .companylogo{
-  background: white;
   padding: 2em;
+}
+
+.introtextleft {
+  position: absolute;
+  left: 0;
 }
 
 .companyintrotext{
   color: #565656 !important;
   padding-top: 1em;
+}
+
+.sponsorchildtext {
+  font-weight: 500 !important;
+  font-size: 32px !important; 
+  color: #565656 !important;
+  padding-top: 1em;
+}
+
+.donatebutton{
+  background: #ad1f25;
+  border: 1px solid #ad1f25;
+  color: rgb(255, 255, 255);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  box-shadow: 4px 3px 9px 2px #00000021;
+  padding: 0.5em 2em !important;
 }
 
   @media (max-width: 991.98px) {
@@ -7721,7 +7763,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    opacity: 0.5;
+    opacity: 0;
     background: #000; }
 
 .slider-text {
@@ -7736,7 +7778,7 @@ h1, h2, h3, h4, h5,
       .slider-text h1 {
         font-size: 40px; } }
   .slider-text p {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.5;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8); }
