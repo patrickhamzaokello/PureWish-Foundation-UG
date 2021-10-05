@@ -156,16 +156,94 @@
   width: 160px;
 }
 .title-color{
-  color: var(--orange);
+  color: #666
 }
-.mycols{
-  background-color: #5C4233;
+
+.sponsorchildbtn{
+  text-align:center;
+  place-content:center;
+  display:grid;
+  padding: 2em 0;
+}
+
+
+.attensionbox {
+    padding: 2em 0;
+    background: #fffbf0;
+}
+
+.givingwayscript {
+  width: 65px;
+  height: 65px;
+  background: #ad1f26;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.donateiconcentre {
+  position: relative;
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 13px;
+  font-weight: bold;
   width: 100%;
-  margin: 10px;
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  font-size: 16px;
-  border-radius: 8px;
+  color:white;
+  left:0;
+  right:0;
+  margin:0 auto;
+  -webkit-transition: opacity 7s ease-in-out;
+  -moz-transition: opacity 7s ease-in-out;
+  -o-transition: opacity 7s ease-in-out;
+  transition: opacity 7s ease-in-out;
+
+  animation-name: heartFadeInOut; 
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes heartFadeInOut {
+  0% {
+    opacity:1;
+  }
+  10% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  60% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+
+
+.sponsorchildbtn > button {
+  background: #ad1f25;
+  border: 1px solid #ad1f25;
+  color:white;
+  padding: 1em;
+}
+
+.mycols{
+  background-color: #ffffff;
+    width: 100%;
+    margin: 10px;
+    color: rgb(0 0 0);
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px #0000001c;
 }
 .logoedit{
   margin-left: 120px;
@@ -177,6 +255,7 @@
 .make-center{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .al-col{
   width: 68% !important;
@@ -335,7 +414,10 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;
+  object-fit: cover;
+
+}
 
 svg:not(:root) {
   overflow: hidden; }
@@ -7576,8 +7658,8 @@ h1, h2, h3, h4, h5,
 }
 
 .donatebutton{
-  background: #ad1f25;
-  border: 1px solid #ad1f25;
+  background: #543727;
+  border: 1px solid #543727;
   color: rgb(255, 255, 255);
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -7585,6 +7667,16 @@ h1, h2, h3, h4, h5,
   border-radius: 0;
   box-shadow: 4px 3px 9px 2px #00000021;
   padding: 0.5em 2em !important;
+  -webkit-transition: opacity 7s ease-in-out;
+  -moz-transition: opacity 7s ease-in-out;
+  -o-transition: opacity 7s ease-in-out;
+  transition: opacity 7s ease-in-out;
+
+  animation-name: heartFadeInOut; 
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
 }
 
   @media (max-width: 991.98px) {
