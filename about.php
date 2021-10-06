@@ -113,7 +113,7 @@
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/aboutuspic.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('images/womenworkin.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="introtextleft container">
 
