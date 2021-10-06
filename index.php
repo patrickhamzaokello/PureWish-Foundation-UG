@@ -446,7 +446,7 @@ include('session.php');
           <form id="myform" action="processvolunteers.php" class="volunter-form" method="POST">
             <div class="messagediv"></div>
             <div class="form-group">
-              <input type="text" id="volname" name="volname" class="form-control" placeholder="Your Name">
+              <input type="text" id="volname" name="volname" class="form-control" placeholder="Your Name" required>
             </div>
             <div class="form-group">
               <input type="email" id="volemail" name="volemail" class="form-control" placeholder="Your Email" required>
