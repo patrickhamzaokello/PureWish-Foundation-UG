@@ -4,14 +4,14 @@
    
    $user_check = $_SESSION['login_user'];
    
-   $ses_sql = mysqli_query($db,"select email from users where email = '$user_check' ");
+   $ses_sql = mysqli_query($db,"select name from users where email = '$user_check' ");
    
    $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
    
-   $login_session = $row['email'];
+   $login_session = $row['name'];
    
-   if(!isset($_SESSION['login_user'])){
-      header("location:login.php");
-      die();
-   }
+   // if(!isset($_SESSION['login_user'])){
+   //    header("location:login.php");
+   //    die();
+   // }
 ?>

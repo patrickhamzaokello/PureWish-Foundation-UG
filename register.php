@@ -5,24 +5,43 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
    // username and password sent from form 
 
+   $myusername = mysqli_real_escape_string($db, $_POST['userfullname']);
    $myuseremail = mysqli_real_escape_string($db, $_POST['useremail']);
    $mypassword = mysqli_real_escape_string($db, $_POST['password']);
+   $myconfirmpassword = mysqli_real_escape_string($db, $_POST['confirmpassword']);
 
-   $sql = "SELECT id FROM users WHERE email = '$myuseremail' and password = '$mypassword'";
-   $result = mysqli_query($db, $sql);
-   $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-   $active = $row['active'];
-
-   $count = mysqli_num_rows($result);
-
-   // If result matched $myusername and $mypassword, table row must be 1 row
-
-   if ($count == 1) {
-      $_SESSION['login_user'] = $myuseremail;
-
-      header("location: sponsored.php");
+   if (strlen($mypassword) < 6) {
+      $error = "Your Password is too short, passwords must have 8 characters";
+   } elseif ($mypassword != $myconfirmpassword) {
+      $error = "Your Password Does not Match";
    } else {
-      $error = "Your Login Name or Password is invalid";
+
+      $sql = "SELECT id FROM users WHERE `email` = '$myuseremail' ";
+      $result = mysqli_query($db, $sql);
+      $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+      $active = $row['active'];
+
+      echo $row['active'];
+
+      $count = mysqli_num_rows($result);
+
+      // If result matched $myusername and $mypassword, table row must be 1 row
+
+      if ($count == 1) {
+         $error = "Email is Existing already";
+      } else {
+
+         $register = "INSERT INTO `users`(`name`, `email`, `password`) VALUES ('$myusername', '$myuseremail', '$mypassword')";
+
+         if ($db->query($register) === TRUE) {
+            echo "New record created successfully";
+
+            $_SESSION['login_user'] = $myusername;
+            header("location: welcome.php");
+         } else {
+            echo "Error: " . $sql . "<br>" . $db->error;
+         }
+      }
    }
 }
 ?>
@@ -147,7 +166,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <li class="nav-item"><a href="index.php" class="nav-link"><?php echo $login_session; ?></a></li>
                   <li class="nav-item"><a href="logout.php" class="nav-link">Logout</a></li>
                <?php  } else { ?>
-                  <li class="nav-item active"><a href="login.php" class="nav-link">Login</a></li>
+                  <li class="nav-item active"><a href="login.php" class="nav-link">Register</a></li>
 
                <?php } ?>
 
@@ -155,7 +174,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          </div>
       </div>
    </nav>
-   
+
 
    <section class="ftco-section">
       <div class="container">
@@ -165,25 +184,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <div style=" border: solid 1px #333; height: 100%;">
 
                      <div class="formbox" style="margin: 20px;">
-                     
+
                         <form action="" method="post">
 
-                           <p class="logintext">Account Log in</p>
+                           <p class="logintext">Registration</p>
 
-                           <p class="newtopwf">New to PureWish <a href="register.php"><span class="newsignup">Create Account</span></a></p>
+                           <p class="newtopwf">Already Having an Account? <a href="login.php"><span class="newsignup"> Sign In</span></a></p>
+
+                           <div style="font-size:11px; text-align:center; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+
+
+                           <label for="usernameid" class="labeltext">Full Name</label>
+                           <input id="usernameid" type="text" name="userfullname" class="inputbox" placeholder="Full Name" required />
+
 
                            <label for="useremailid" class="labeltext">Email</label>
                            <input id="useremailid" type="email" name="useremail" class="inputbox" placeholder="Email address" required />
-                           <p style="font-size:11px; color:#cc0000; "><?php echo $error; ?></p>
+
                            <label for="userpasswordid" class="labeltext">Password</label>
                            <input id="userpasswordid" type="password" name="password" class="inputbox" placeholder="Password" required />
 
+                           <label for="userconfirmpasswordid" class="labeltext">Confirm Password</label>
+                           <input id="userconfirmpasswordid" type="password" name="confirmpassword" class="inputbox" placeholder="Confirm Password" />
 
-                           <input class="inputsubmit" type="submit" value=" LOG IN " /><br />
+                           <input class="inputsubmit" type="submit" value=" REGISTER " /><br />
 
                         </form>
 
-                        <a href="register.php"><button class="registerlogin">Create Account</button></a>
+                        <a href="login.php"><button class="registerlogin">Log In</button></a>
+
+
 
                      </div>
 

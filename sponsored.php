@@ -1,3 +1,6 @@
+<?php
+   include('session.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -79,67 +82,44 @@
     </style>
   </head>
   <body>
-    <nav
-      class="
-        navbar navbar-expand-lg navbar-dark
-        ftco_navbar
-        bg-dark
-        ftco-navbar-light
-      "
-      id="ftco-navbar"
-    >
-      <!-- <img src="images/pwfuremove.png" class="logoedit" height="150px" alt=""> -->
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Purewish</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="oi oi-menu"></span> Menu
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <!-- <img src="images/pwfu.jpg" class="logoedit" alt=""> -->
+    <div class="nav-color container">
+      <a class="navbar-brand componayname" href="index.php">Purewish</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="projects.html" class="nav-link">Project</a>
-            </li>
-            <li class="nav-item active">
-              <a href=.html" class="nav-link">Sponsor a Child</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="gallery.html" class="nav-link">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="projects.php" class="nav-link">Project</a></li>
+          <li class="nav-item active"><a href="sponsored.php" class="nav-link">Sponsor a Child</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+
+
+
+          <?php if(isset($_SESSION['login_user'])){ ?>
+            <li class="nav-item"><a href="index.php" class="nav-link"><?php echo $login_session; ?></a></li>
+          <li class="nav-item"><a href="logout.php" class="nav-link">Logout</a></li>
+        <?php  } else {?>
+          <li class="nav-item"><a href="login.php" class="nav-link">Register / Login</a></li>
+
+          <?php }?>
+
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <section class="ftco-section">
       <div class="container">
         <div class="row d-flex">
-          <div class="col-md-12 attensionbox pl-md-5 ftco-animate">
+          <div class="col-md-7 attensionbox pl-md-5 ftco-animate">
             <h2 class="mb-1">About Child Sponsorship</h2>
-            <p>
-              
-            </p>
-
+            
             <h5 class="mb-2">How are our children assessed and identified?</h5>
             <p>
               Our work has always been focused on the most vulnerable children
@@ -168,18 +148,39 @@
               <li>Updates on Purewish Foundation Uganda and our work</li>
             </ul>
           </div>
+
+          <div class="col-md-5 pl-md-5 ftco-animate">
+          <h2 class="mb-1">Sponsor Other Projects</h2>
+            
+            <h5 class="mb-2">Youth and Women Entrepreneurship</h5>
+            <p>
+            The Youth and Women Entrepreneurship Project is economic empowerment strategy based on the two pillars
+of skills development and livelihood support. The project targets and unemployed youths and women of Uganda.
+            </p>
+            <p style="font-weight: 500; color:#000">Your Donation of $300 will give a loan with minimal interest rate to a youth or a single mother</p>
+            <a href="donte"><button class="donatespon">Donate</button></a>
+
+            <h5 class="mb-2">Vocational Skills Training</h5>
+            <p>
+            This project offers training to youths and women in the region with hands on skills like tailoring/cloth sewing, making shoes,
+liquid detergent, craft bags and beads to self-sustainability.
+            </p>
+
+            <p style="font-weight: 500; color:#000">Donate $150 for six months training per person</p>
+            <a href="donte"><button class="donatespon">Donate</button></a>
+
+
+          </div>
+
           <!-- <div class="col-md-4 d-flex ftco-animate">
           <div class="img img-about align-self-stretch" style="background-image: url(images/bar.jpg); width: 100%;"></div>
         </div> -->
         </div>
       </div>
-    </section>
 
-    <section class="ftco-section">
       <div class="container">
-
-        <h2 class="mb-1">Sponsor a child</h2>
-        <p>
+        <h2 class="mb-1 make-center pt-4 mt-2">Sponsor a child in school for $50 Monthly</h2>
+        <p class="make-center">
           Invest in a child, give a child a future
         </p>
 
@@ -604,18 +605,6 @@
       </svg>
     </div>
 
-    <div class="givingwayscript" style="color: yellow !important">
-      <script>
-        window.gwConfig = {
-          id: "purewish-foundation-uganda",
-          lang: "en",
-        };
-      </script>
-      <script
-        type="text/javascript"
-        src="https://common.givingway.com/widgets/gw-widget-1.js"
-      ></script>
-    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>

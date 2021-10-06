@@ -7667,16 +7667,6 @@ h1, h2, h3, h4, h5,
   border-radius: 0;
   box-shadow: 4px 3px 9px 2px #00000021;
   padding: 0.5em 2em !important;
-  -webkit-transition: opacity 7s ease-in-out;
-  -moz-transition: opacity 7s ease-in-out;
-  -o-transition: opacity 7s ease-in-out;
-  transition: opacity 7s ease-in-out;
-
-  animation-name: heartFadeInOut; 
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-direction: alternate;
 }
 
   @media (max-width: 991.98px) {
@@ -7980,6 +7970,15 @@ h1, h2, h3, h4, h5,
 .bg-light {
   background: #fafafa !important; }
 
+
+.donatespon {
+  background: crimson;
+  border: none;
+  padding: 0.3em 1.5em;
+  color: white;
+  margin-bottom: 2em;
+}
+
 .bg-primary {
   background: #221232; }
 
@@ -8064,8 +8063,12 @@ h1, h2, h3, h4, h5,
       border-color: #000;
       color: #fff; }
 
+
+
+
+
 .ftco-intro {
-  margin-top: -80px; }
+  margin-top: 4em; }
   .ftco-intro.ftco-intro-2 {
     margin-top: 0 !important; }
   .ftco-intro .block-18 {

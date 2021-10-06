@@ -1,3 +1,7 @@
+<?php
+   include('session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,24 +83,33 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <!-- <img src="images/pwfuremove.png" class="logoedit" alt=""> -->
-    <div class="container">
-      <a class="navbar-brand" href="index.html">PureWish</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <!-- <img src="images/pwfu.jpg" class="logoedit" alt=""> -->
+    <div class="nav-color container">
+      <a class="navbar-brand componayname" href="index.php">Purewish</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item active"><a href="projects.html" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="sponsored.html" class="nav-link">Sponsor a Child</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+          <li class="nav-item active"><a href="projects.php" class="nav-link">Project</a></li>
+          <li class="nav-item"><a href="sponsored.php" class="nav-link">Sponsor a Child</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+
+
+
+          <?php if(isset($_SESSION['login_user'])){ ?>
+            <li class="nav-item"><a href="index.php" class="nav-link"><?php echo $login_session; ?></a></li>
+          <li class="nav-item"><a href="logout.php" class="nav-link">Logout</a></li>
+        <?php  } else {?>
+          <li class="nav-item"><a href="login.php" class="nav-link">Register / Login</a></li>
+
+          <?php }?>
+
         </ul>
       </div>
     </div>

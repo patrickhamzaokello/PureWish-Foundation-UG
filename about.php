@@ -1,3 +1,7 @@
+<?php
+   include('session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -76,29 +80,39 @@
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <!-- <img src="images/pwfuremove.png" class="logoedit" height="150px" alt=""> -->
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Purewish</a>
+    <!-- <img src="images/pwfu.jpg" class="logoedit" alt=""> -->
+    <div class="nav-color container">
+      <a class="navbar-brand componayname" href="index.php">Purewish</a>
+      
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-               <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="projects.html" class="nav-link">Project</a></li>
-          <li class="nav-item"><a href="sponsored.html" class="nav-link">Sponsor a Child</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item "><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+          <li class="nav-item active"><a href="about.php" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="projects.php" class="nav-link">Project</a></li>
+          <li class="nav-item"><a href="sponsored.php" class="nav-link">Sponsor a Child</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+
+
+
+          <?php if(isset($_SESSION['login_user'])){ ?>
+            <li class="nav-item"><a href="index.php" class="nav-link"><?php echo $login_session; ?></a></li>
+          <li class="nav-item"><a href="logout.php" class="nav-link">Logout</a></li>
+        <?php  } else {?>
+          <li class="nav-item"><a href="login.php" class="nav-link">Register / Login</a></li>
+
+          <?php }?>
+
         </ul>
       </div>
     </div>
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/bcccccc.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('images/aboutuspic.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="introtextleft container">
 
@@ -107,9 +121,9 @@
 
             <div class="companylogo">
               <!-- <img src="images/pwfuremove.png" alt=""> -->
-              <p class="companyintrotext">Purewish Foundation Uganda (PFU) is an indigenous not for profit Christian Organization with a mission to empower and transform humanity to build for the future</p>
+              <!-- <p class="companyintrotext">Purewish Foundation Uganda (PFU) is an indigenous not for profit Christian Organization with a mission to empower and transform humanity to build for the future</p> -->
 
-              <p class="sponsorchildtext">Sponsor a Child Mother for Vocational Training Skills for $100, One time Donation</p>
+              <p class="sponsorchildtext">Sponsor a Child Mother for Vocational Training Skills for $150, for six Month Training</p>
               <p><a class="" href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank"><button class="donatebutton">Donate</button></a></p>
 
             </div>
@@ -397,21 +411,13 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-  <div class="givingwayscript" style="color: yellow !important;">
+  <div class="givingwayscript">
 
-    <script>
-      window.gwConfig = {
-         id: 'purewish-foundation-uganda',
-        lang: 'en'
-    
-        
-      
-      }
-    </script>
-    <script type="text/javascript" src="https://common.givingway.com/widgets/gw-widget-1.js"></script>
-    
-  
-  </div>
+<div class="donateiconcentre">
+Donate
+</div>
+
+</div>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
