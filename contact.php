@@ -68,17 +68,7 @@
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/contact.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-             <!-- <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p> -->
-            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Contact Us</h1>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
 
     
     <section class="ftco-section contact-section ftco-degree-bg">
@@ -104,18 +94,19 @@
         <div class="row block-9">
           <div class="col-md-6 pr-md-5">
           	<h4 class="mb-4">Do you have any questions?</h4>
-            <form action="#" name="sendform">
+            <form id="mycontact" action="processcontacts.php" method="POST">
+            <div class="contactmessagediv"></div>
               <div class="form-group">
-                <input type="text" name="name" class="form-control" placeholder="Your Name">
+                <input type="text" id="contactname" name="contactname" class="form-control" placeholder="Your Name">
               </div>
               <div class="form-group">
-                <input type="text" name="email" class="form-control" placeholder="Your Email">
+                <input type="text" id="contactemail" name="contactemail" class="form-control" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                <input type="text" id="contactsubject" name="contactsubject" class="form-control" placeholder="Subject">
               </div>
               <div class="form-group">
-                <textarea name="message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                <textarea  id="contactmessage" name="contactmessage" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -124,9 +115,11 @@
           
           </div>
 
-          <div class="col-md-6" id="map">
-            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="http://www.gps.ie/">gps devices</a></div>  
-          </div>
+          <div class="col-md-6 pl-md-5">
+               <img src="images/pwfuremove.png" alt="">
+               <h2 class="mb-4">Purewish Foundation Uganda</h2>
+               <p>Purewish Foundation Uganda (PFU) is an indigenous not for profit Christian Organization which was founded in 2014 and first registered as Community Based Organization with Lira district Local government in Uganda. PFU is making development work for the children, youth and women who are the most vulnerable populations and groups across Lira district.</p>
+            </div>
         </div>
       </div>
     </section>
@@ -200,6 +193,7 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="processcontactss.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
@@ -212,8 +206,6 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
   </body>
