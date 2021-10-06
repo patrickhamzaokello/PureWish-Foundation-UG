@@ -59,7 +59,7 @@ include('session.php');
 
 
           <?php if (isset($_SESSION['login_user'])) { ?>
-            <li class="nav-item"><a href="index.php" class="nav-link"><?php echo $login_session; ?></a></li>
+            <li class="nav-item"><a href="index.php" class="nav-link"><?php echo $_SESSION['login_user']; ?></a></li>
             <li class="nav-item"><a href="logout.php" class="nav-link">Logout</a></li>
           <?php  } else { ?>
             <li class="nav-item"><a href="login.php" class="nav-link">Register / Login</a></li>

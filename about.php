@@ -100,7 +100,7 @@
 
 
           <?php if(isset($_SESSION['login_user'])){ ?>
-            <li class="nav-item"><a href="index.php" class="nav-link"><?php echo $login_session; ?></a></li>
+            <li class="nav-item"><a href="index.php" class="nav-link"><?php echo $_SESSION['login_user']; ?></a></li>
           <li class="nav-item"><a href="logout.php" class="nav-link">Logout</a></li>
         <?php  } else {?>
           <li class="nav-item"><a href="login.php" class="nav-link">Register / Login</a></li>
@@ -146,7 +146,7 @@
     			<div class="col-md-6 pl-md-5 ftco-animate">
     				<h2 class="mb-4">Purewish Foundation Uganda</h2>
     				<p>Purewish Foundation Uganda (PFU) is an indigenous not for profit Christian Organization which was founded in 2014 and first registered as Community Based Organization with Lira district Local government in Uganda. PFU is making development work for the children, youth and women who are the most vulnerable populations and groups across Lira district.</p>
-    				<p>PFU core work is based on empowering communities to shape the destiny of their society by investing in Children, youths and women by ensuing that vulnerable children (orphans, street children and child-headed families) through provision of quality education (school sponsorship and scholastics), youth vocational training skills (Tailoring/sewing cloth, making liquid detergent, craft bags and beads), youths and women entrepreneurship (Business startup training, business incubation and financing).</p>
+    				<p>PFU core work is based on empowering communities to shape the destiny of their society and investing in Children, youths and women by ensuing that vulnerable children (orphans, street children and child-headed families) are supported through provision of quality education (school sponsorship and scholastics), youth vocational training skills (Tailoring/sewing cloth, making liquid detergent, craft bags and beads), youths and women entrepreneurship (Business startup training, business incubation and financing).</p>
     		</div>
     	</div>
     </section>
