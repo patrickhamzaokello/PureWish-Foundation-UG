@@ -53,6 +53,7 @@ include('session.php');
           <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
           <li class="nav-item"><a href="projects.php" class="nav-link">Project</a></li>
           <li class="nav-item"><a href="sponsored.php" class="nav-link">Sponsor a Child</a></li>
+          <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
 
 
@@ -467,7 +468,7 @@ include('session.php');
     <div class="overlay"></div>
     <div class="container">
       <div class="row mb-5">
-        <div class="col-md-3">
+        <div class="col-md-7">
           <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">About Us</h2>
             <p>Purewish Foundation Uganda (PFU) is an indigenous not for profit Christian Organization which was founded in 2014 and first registered as CBO with Lira district Local government in Uganda.</p>
@@ -478,44 +479,12 @@ include('session.php');
             </ul>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Recent Blog</h2>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/a1.jpg);"></a>
-              <div class="text">
-                <h3 class="heading"><a href="#">Training girls who dropped out of school with basic skills</a></h3>
-                <div class="meta">
-                  <!-- <div><a href="#"><span class="icon-calendar"></span> September 12, 2021</a></div> -->
-                  <!-- <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div> -->
-                </div>
-              </div>
-            </div>
-
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4" style="background-image: url(images/image_4.jpg);"></a>
-              <div class="text">
-                <h3 class="heading"><a href="#">Joining hands with Covid Task force to help Vulnarable families </a></h3>
-                <div class="meta">
-                  <!-- <div><a href="#"><span class="icon-calendar"></span> July 12, 2021</a></div> -->
-                  <!-- <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div> -->
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
         <div class="col-md-2">
           <div class="ftco-footer-widget mb-4 ml-md-4">
             <h2 class="ftco-heading-2">Site Links</h2>
             <ul class="list-unstyled">
-              <li><a href="index.html" class="py-2 d-block">Home</a></li>
-              <li><a href="about.html" class="py-2 d-block">About</a></li>
-              <li><a href="donate.html" class="py-2 d-block">Donate</a></li>
-              <li><a href="blog.html" class="py-2 d-block">Blog</a></li>
+              <li><a href="index.php" class="py-2 d-block">Home</a></li>
+              <li><a href="about.php" class="py-2 d-block">About</a></li>
             </ul>
           </div>
         </div>
@@ -525,7 +494,7 @@ include('session.php');
             <div class="block-23 mb-3">
               <ul>
                 <li><span class="icon icon-map-marker"></span><span class="text">Plot 29, Soroti Road, Lira City, Uganda</span></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256 788 555913</span></a></li>
+                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256 0394010416</span></a></li>
                 <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@pwfu.org</span></a></li>
               </ul>
             </div>
