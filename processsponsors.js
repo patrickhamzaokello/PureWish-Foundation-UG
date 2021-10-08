@@ -1,10 +1,11 @@
 $(document).ready(function () {
   $("form").submit(function (event) {
     var formData = {
-      contactname: $("#contactname").val(),
-      contactemail: $("#contactemail").val(),
-      contactsubject: $("#contactsubject").val(),
-      contactmessage: $("#contactmessage").val(),
+      childname: $("#childnameinput").val(),
+      sponsorname: $("#name").val(),
+      sponsoremail: $("#email").val(),
+      sponsoramount: $("#amount").val(),
+      sponsormessage: $("#sponsormessage").val(),
 
     };
 
@@ -12,7 +13,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "processcontacts.php",
+      url: "processsponsorss.php",
       data: formData,
       dataType: "json",
       encode: true,
