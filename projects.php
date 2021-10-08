@@ -363,9 +363,7 @@
       </div>
     </section>
     <!-- footer partners  -->
-    <div class="center-image">
-      <img src="images/icons/partners.png" style="display: grid; justify-content: center;" width="1000px" alt="">
-    </div>
+    <div class="container"> <div class="center-image" style="margin-top: 2em;"> <img src="images/icons/partners.png" style="display: grid; justify-content: center; height: 100%; width: 100%;" width="1000px" alt=""> </div> </div>
 
     <footer class="ftco-footer ftco-section img">
     <div class="overlay"></div>

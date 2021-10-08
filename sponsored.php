@@ -98,6 +98,7 @@ include('session.php');
 
     .linkss {
       padding-top: 10px;
+      margin-bottom: 0 !important;
     }
 
     .childimage {
@@ -119,7 +120,13 @@ include('session.php');
 
     .linkss a {
       background: #1fad66 !important;
-    border: #1fad66 !important;
+      border: 1px solid #1fad66 !important;
+      box-shadow: none;
+    }
+
+    .btn.btn-primary {
+
+      width: 100% !important;
     }
 
     .sponserdiv {
@@ -135,15 +142,16 @@ include('session.php');
     }
 
     .sponsorchildnowbtn {
-      background: #118b5f;border: none;padding: 10px 20px;width: 100%;color: white;
+      background: #118b5f;
+      border: none;
+      padding: 10px 20px;
+      width: 100%;
+      color: white;
     }
 
     .sponsorchildnowbtn:hover {
-      background:#027c3a;
+      background: #027c3a;
     }
-
-
-
   </style>
 </head>
 
@@ -183,11 +191,10 @@ include('session.php');
 
   <section class="ftco-section">
 
-
-  <div class="container">
+    <div class="container">
       <h2 class="mb-1 make-center pt-4 mt-2">Sponsor a child in school for $50 Monthly</h2>
-      <p class="make-center">
-        Invest in a child, give a child a future
+      <p style="text-align:center">
+        Invest in a child, give a child a future <a class="readmorespon" style="color: #4068ff; margin-left: 0.4em;" href="#aboutchildsponsorship"> Read more About our Child Sponsorship</a>
       </p>
 
       <div class="childrencontainer">
@@ -415,6 +422,8 @@ include('session.php');
 
 
     </div>
+  </section>
+  <section class="ftco-section" id="aboutchildsponsorship">
     <div class="container">
       <div class="row d-flex">
         <div class="col-md-7 attensionbox pl-md-5 ftco-animate">
@@ -476,7 +485,7 @@ include('session.php');
       </div>
     </div>
 
-  
+
 
   </section>
 
@@ -507,7 +516,7 @@ include('session.php');
           <input type="submit" value="Send" style="width: 100% !important;" class="sponsorchildnowbtn">
         </div>
         <div class="form-group">
-        <button type="reset" id="cancelbtn" style="background: #ad1f26;border: none;padding: 10px 20px;width: 100%;color: white;" onclick="cancelsponsohip()">Cancel </button>
+          <button type="reset" id="cancelbtn" style="background: #959595;border: none;padding: 10px 20px;width: 100%;color: white;" onclick="cancelsponsohip()">Cancel </button>
         </div>
       </form>
 
@@ -517,8 +526,8 @@ include('session.php');
 
 
 
-  <div class="center-image">
-    <img src="images/icons/partners.png" style="display: grid; justify-content: center" width="1000px" alt="" />
+  <div class="container">
+    <div class="center-image" style="margin-top: 2em;"> <img src="images/icons/partners.png" style="display: grid; justify-content: center; height: 100%; width: 100%;" width="1000px" alt=""> </div>
   </div>
 
   <footer class="ftco-footer ftco-section img">
@@ -593,7 +602,7 @@ include('session.php');
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="processsponsors.js"  ></script>
+  <script src="processsponsors.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
