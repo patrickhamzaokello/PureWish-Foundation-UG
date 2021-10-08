@@ -27,6 +27,12 @@ $(document).ready(function () {
           '<div class="alert alert-success">' + data.message + "</div>"
         );
 
+        setTimeout(function () {
+          $(".messagediv").html(
+            ''
+          );
+        }, 5000);
+
         document.getElementById("myform").reset();
 
       }

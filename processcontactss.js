@@ -24,7 +24,11 @@ $(document).ready(function () {
         $(".contactmessagediv").html(
           '<div class="alert alert-success">' + data.message + "</div>"
         );
-
+        setTimeout(function () {
+          $(".contactmessagediv").html(
+            ''
+          );
+        }, 5000);
         document.getElementById("mycontact").reset();
 
       }

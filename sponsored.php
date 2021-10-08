@@ -133,6 +133,17 @@ include('session.php');
       display: none;
 
     }
+
+    .sponsorchildnowbtn {
+      background: #118b5f;border: none;padding: 10px 20px;width: 100%;color: white;
+    }
+
+    .sponsorchildnowbtn:hover {
+      background:#027c3a;
+    }
+
+
+
   </style>
 </head>
 
@@ -171,68 +182,9 @@ include('session.php');
   </nav>
 
   <section class="ftco-section">
-    <div class="container">
-      <div class="row d-flex">
-        <div class="col-md-7 attensionbox pl-md-5 ftco-animate">
-          <h2 class="mb-1">About Child Sponsorship</h2>
-
-          <h5 class="mb-2">How are our children assessed and identified?</h5>
-          <p>
-            Our work has always been focused on the most vulnerable children
-            and families living in Northern region of Uganda where many
-            children and families suffered as the result of war. We only work
-            with those who are the poorest of the poor and at the lowest
-            levels of the community. The selection process is very strict,
-            with two different social workers assessing the same family. A
-            manager will then also conduct check-up visits to ensure
-          </p>
-
-          <h5 class="mb-2">What does child sponsorship include?</h5>
-          <ul>
-            <li>School tuition.</li>
-            <li>Basic medical care</li>
-            <li>School uniform</li>
-            <li>Personal child and family support</li>
-            <li>Meals in school</li>
-          </ul>
-
-          <h5 class="mb-2">What do you receive as a sponsor?</h5>
-          <ul>
-            <li>A photograph and profile of your child</li>
-            <li>A Christmas card from your child</li>
-            <li>Regular updates on your child’s.</li>
-            <li>Updates on Purewish Foundation Uganda and our work</li>
-          </ul>
-        </div>
-
-        <div class="col-md-5 pl-md-5 ftco-animate">
-          <h2 class="mb-1">Sponsor Other Projects</h2>
-
-          <h5 class="mb-2">Youth and Women Entrepreneurship</h5>
-          <p>
-            The Youth and Women Entrepreneurship Project is economic empowerment strategy based on the two pillars
-            of skills development and livelihood support. The project targets and unemployed youths and women of Uganda.
-          </p>
-          <p style="font-weight: 500; color:#000">Your Donation of $300 will give a loan with minimal interest rate to a youth or a single mother</p>
-          <a href="donte"><button class="donatespon">Donate</button></a>
-
-          <h5 class="mb-2">Vocational Skills Training</h5>
-          <p>
-            This project offers training to youths and women in the region with hands on skills like tailoring/cloth sewing, making shoes,
-            liquid detergent, craft bags and beads to self-sustainability.
-          </p>
-
-          <p style="font-weight: 500; color:#000">Donate $150 for six months training per person</p>
-          <a href="donte"><button class="donatespon">Donate</button></a>
 
 
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="container">
+  <div class="container">
       <h2 class="mb-1 make-center pt-4 mt-2">Sponsor a child in school for $50 Monthly</h2>
       <p class="make-center">
         Invest in a child, give a child a future
@@ -463,34 +415,96 @@ include('session.php');
 
 
     </div>
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-md-7 attensionbox pl-md-5 ftco-animate">
+          <h2 class="mb-1">About Child Sponsorship</h2>
+
+          <h5 class="mb-2">How are our children assessed and identified?</h5>
+          <p>
+            Our work has always been focused on the most vulnerable children
+            and families living in Northern region of Uganda where many
+            children and families suffered as the result of war. We only work
+            with those who are the poorest of the poor and at the lowest
+            levels of the community. The selection process is very strict,
+            with two different social workers assessing the same family. A
+            manager will then also conduct check-up visits to ensure
+          </p>
+
+          <h5 class="mb-2">What does child sponsorship include?</h5>
+          <ul>
+            <li>School tuition.</li>
+            <li>Basic medical care</li>
+            <li>School uniform</li>
+            <li>Personal child and family support</li>
+            <li>Meals in school</li>
+          </ul>
+
+          <h5 class="mb-2">What do you receive as a sponsor?</h5>
+          <ul>
+            <li>A photograph and profile of your child</li>
+            <li>A Christmas card from your child</li>
+            <li>Regular updates on your child’s.</li>
+            <li>Updates on Purewish Foundation Uganda and our work</li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 pl-md-5 ftco-animate">
+          <h2 class="mb-1">Sponsor Other Projects</h2>
+
+          <h5 class="mb-2">Youth and Women Entrepreneurship</h5>
+          <p>
+            The Youth and Women Entrepreneurship Project is economic empowerment strategy based on the two pillars
+            of skills development and livelihood support. The project targets and unemployed youths and women of Uganda.
+          </p>
+          <p style="font-weight: 500; color:#000">Your Donation of $300 will give a loan with minimal interest rate to a youth or a single mother</p>
+          <a href="donte"><button class="donatespon">Donate</button></a>
+
+          <h5 class="mb-2">Vocational Skills Training</h5>
+          <p>
+            This project offers training to youths and women in the region with hands on skills like tailoring/cloth sewing, making shoes,
+            liquid detergent, craft bags and beads to self-sustainability.
+          </p>
+
+          <p style="font-weight: 500; color:#000">Donate $150 for six months training per person</p>
+          <a href="donte"><button class="donatespon">Donate</button></a>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+  
 
   </section>
 
   <div class="sponserdiv">
     <div class="sponsorshipform">
-      <div class="contactmessagediv">
+      <div class="sponsormessagediv">
 
       </div>
       <form action="processsponsorss.php" method="POST">
 
         <div class="form-group">
-          <input id="childnameinput" type="text" name="childname" class="form-control" placeholder="Child`s Name">
+          <input id="childnameinput" type="text" name="childname" class="form-control" placeholder="Child`s Name" disabled>
         </div>
         <div class="form-group">
-          <input type="text" id="name" name="name" class="form-control" placeholder="Sponsor`s Name">
+          <input type="text" id="name" name="name" class="form-control" placeholder="Sponsor`s Name" required>
         </div>
         <div class="form-group">
-          <input type="text" id="email" name="email" class="form-control" placeholder="Sponsor`s Email">
+          <input type="text" id="email" name="email" class="form-control" placeholder="Sponsor`s Email" required>
         </div>
         <div class="form-group">
-          <input type="text" id="amount" name="amount" class="form-control" placeholder="Amount in $">
+          <input type="text" id="amount" name="amount" class="form-control" placeholder="Amount in $" required>
         </div>
 
         <div class="form-group">
-          <textarea name="sponsormessage" id="sponsormessage" cols="30" rows="5" class="form-control" placeholder="Message" spellcheck="false"></textarea>
+          <textarea name="sponsormessage" id="sponsormessage" cols="30" rows="5" class="form-control" placeholder="Message" spellcheck="false" required></textarea>
         </div>
         <div class="form-group">
-          <input type="submit" value="Send" style="width: 100% !important;" class="btn btn-primary py-3 px-5">
+          <input type="submit" value="Send" style="width: 100% !important;" class="sponsorchildnowbtn">
         </div>
         <div class="form-group">
         <button type="reset" id="cancelbtn" style="background: #ad1f26;border: none;padding: 10px 20px;width: 100%;color: white;" onclick="cancelsponsohip()">Cancel </button>
@@ -575,44 +589,6 @@ include('session.php');
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
     </svg>
   </div>
-
-
-  <script>
-    const productCards = document.querySelectorAll(".product-card");
-    const childinputname = document.querySelector("#childnameinput");
-    const sponsorshipform = document.querySelector(".sponserdiv");
-    const displaySetting = sponsorshipform.style.display;
-
-
-    productCards.forEach((productCard) => {
-      const productCardLink = productCard.querySelector(".product-card__link");
-
-      const childNamegot = productCard.querySelector(".childname").innerHTML;
-
-      // Make whole card clickable, but only if event target is NOT a specific card action inside <div class="product-card__actions">.
-      productCard.addEventListener("click", (e) => {
-        if (e.target.closest(".product-card__actions") === null) {
-          // productCardLink.click();
-
-
-          if (displaySetting == "block") {
-            sponsorshipform.style.display = "none";
-          } else {
-            sponsorshipform.style.display = "grid";
-          }
-
-          console.log(childNamegot);
-          childinputname.value = childNamegot;
-        }
-      });
-    });
-
-    function cancelsponsohip() {
-      sponsorshipform.style.display = "none";
-    }
-  </script>
-
-
 
 
   <script src="js/jquery.min.js"></script>
