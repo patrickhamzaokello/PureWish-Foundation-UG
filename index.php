@@ -392,7 +392,7 @@ include('session.php');
       <div class="row d-flex">
         <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry align-self-stretch">
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/acan.jpg');">
+            <a href="sponsored.php" class="block-20" style="background-image: url('images/acan.jpg');">
             </a>
             <div class="text p-4 d-block">
               <h3 class="heading mt-3"><a href="#">Acen Fiona</a></h3>
@@ -404,7 +404,7 @@ include('session.php');
         </div>
         <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry align-self-stretch">
-            <a href="sponsored.html" class="block-20" style="background-image: url('images/morris.jpg');">
+            <a href="sponsored.php" class="block-20" style="background-image: url('images/morris.jpg');">
             </a>
             <div class="text p-4 d-block">
               <h3 class="heading mt-3"><a href="#">Morris </a></h3>
@@ -414,7 +414,7 @@ include('session.php');
         </div>
         <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry align-self-stretch">
-            <a href="sponsored.html" class="block-20" style="background-image: url('images/akellosarah.jpg');">
+            <a href="sponsored.php" class="block-20" style="background-image: url('images/akellosarah.jpg');">
             </a>
             <div class="text p-4 d-block">
               <h3 class="heading mt-3"><a href="#">Akello Sarah</a></h3>
@@ -424,7 +424,7 @@ include('session.php');
           </div>
         </div>
       </div>
-      <a class="buttonclass" href="sponsored.html"><button class="viewmorebtn"> View More Details</button></a>
+      <a class="buttonclass" href="sponsored.php"><button class="viewmorebtn"> View More Details</button></a>
     </div>
   </section>
   <div class="container">

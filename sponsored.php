@@ -119,8 +119,8 @@ include('session.php');
     }
 
     .linkss a {
-      background: #1fad66 !important;
-      border: 1px solid #1fad66 !important;
+      background: #1f77ad !important;
+      border: 1px solid #1f77ad !important;
       box-shadow: none;
     }
 
@@ -467,7 +467,7 @@ include('session.php');
             of skills development and livelihood support. The project targets and unemployed youths and women of Uganda.
           </p>
           <p style="font-weight: 500; color:#000">Your Donation of $300 will give a loan with minimal interest rate to a youth or a single mother</p>
-          <a href="donte"><button class="donatespon">Donate</button></a>
+          <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank"><button class="donatespon">Donate</button></a>
 
           <h5 class="mb-2">Vocational Skills Training</h5>
           <p>
@@ -476,7 +476,7 @@ include('session.php');
           </p>
 
           <p style="font-weight: 500; color:#000">Donate $150 for six months training per person</p>
-          <a href="donte"><button class="donatespon">Donate</button></a>
+          <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank"><button class="donatespon">Donate</button></a>
 
 
         </div>

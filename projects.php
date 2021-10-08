@@ -147,7 +147,7 @@
           <p class="make-center mb-1">School sponsorship project is the center of this organization, we believe every
             child deserves better. This project supports vulnerable children to quality education and scholastics.
             When we invest in children, we make the world a better place.</p>
-            <a class="sponsorchildbtn" href="sponsored.html"> <button>Click to Sponsor a Child</button></a>
+            <a class="sponsorchildbtn" href="sponsored.php"> <button>Click to Sponsor a Child</button></a>
           <div class="row">
             <div class="col-md-4 ftco-animate">
               <div class="cause-entry">
