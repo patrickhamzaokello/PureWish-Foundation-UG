@@ -518,10 +518,11 @@ include('session.php');
 
 
   <div class="givingwayscript">
-
+  <a  href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank">
     <div class="donateiconcentre">
       Donate
     </div>
+  </a>
 
   </div>
 
