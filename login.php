@@ -8,18 +8,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    $myuseremail = mysqli_real_escape_string($db, $_POST['useremail']);
    $mypassword = mysqli_real_escape_string($db, $_POST['password']);
 
-   $sql = "SELECT id FROM users WHERE email = '$myuseremail' and password = '$mypassword'";
+   $sql = "SELECT id,name FROM users WHERE email = '$myuseremail' and password = '$mypassword'";
    $result = mysqli_query($db, $sql);
    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-   $active = $row['active'];
+   $active = $row['name'];
+
+
 
    $count = mysqli_num_rows($result);
 
    // If result matched $myusername and $mypassword, table row must be 1 row
 
    if ($count == 1) {
-      $_SESSION['login_user'] = $myuseremail;
-
+      $_SESSION['login_user'] = "Account";
       header("location: sponsored.php");
    } else {
       $error = "Your Login Name or Password is invalid";

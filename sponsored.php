@@ -110,6 +110,7 @@ include('session.php');
     .childrencontainer {
       display: flex;
       flex-wrap: wrap;
+      place-content: center;
     }
 
     .sponsorshipform {
@@ -119,10 +120,11 @@ include('session.php');
     }
 
     .linkss a {
-      background: #1f77ad !important;
-      border: 1px solid #1f77ad !important;
-      box-shadow: none;
+      background: #4caf50 !important;
+      border: 1px solid #4caf50 !important;
+      box-shadow: none !important;
     }
+
 
     .btn.btn-primary {
 
@@ -152,6 +154,13 @@ include('session.php');
     .sponsorchildnowbtn:hover {
       background: #027c3a;
     }
+
+    .sponsorbutton {
+      background: white !important;
+      color: black !important;
+      box-shadow: none !important;
+      border: 1px solid #e5e5e5 !important;
+    }
   </style>
 </head>
 
@@ -173,6 +182,7 @@ include('session.php');
           <li class="nav-item active"><a href="sponsored.php" class="nav-link">Sponsor a Child</a></li>
           <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="team.php" class="nav-link">Team</a></li>
 
 
 
@@ -208,7 +218,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
 
@@ -222,7 +232,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
 
@@ -236,7 +246,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
         <div class="product-card">
@@ -249,7 +259,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
         <div class="product-card">
@@ -262,7 +272,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
 
@@ -277,7 +287,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
 
@@ -292,7 +302,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
 
@@ -306,7 +316,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
 
@@ -321,7 +331,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
         <div class="product-card">
@@ -334,7 +344,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
         <div class="product-card">
@@ -347,7 +357,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
         <div class="product-card">
@@ -360,7 +370,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
         <div class="product-card">
@@ -373,7 +383,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
         <div class="product-card">
@@ -386,7 +396,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
 
@@ -400,7 +410,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
         <div class="product-card">
@@ -413,7 +423,7 @@ include('session.php');
             <a href="#" class="product-card__link btn btn-primary my-2">Send Us a Message</a>
           </p>
           <div class="product-card__actions">
-            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2">Donate</a>
+            <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank" class="btn btn-primary my-2  sponsorbutton">Donate</a>
           </div>
         </div>
 
@@ -583,12 +593,12 @@ include('session.php');
   </footer>
 
 
-   <div class="givingwayscript">
-  <a  href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank">
-    <div class="donateiconcentre">
-      Donate
-    </div>
-  </a>
+  <div class="givingwayscript">
+    <a href="https://www.givingway.com/donate/purewish-foundation-uganda" target="_blank">
+      <div class="donateiconcentre">
+        Donate
+      </div>
+    </a>
 
   </div>
 

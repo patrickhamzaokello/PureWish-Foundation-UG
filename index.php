@@ -55,6 +55,7 @@ include('session.php');
           <li class="nav-item"><a href="sponsored.php" class="nav-link">Sponsor a Child</a></li>
           <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="team.php" class="nav-link">Team</a></li>
 
 
 

@@ -100,7 +100,7 @@
           <li class="nav-item"><a href="sponsored.php" class="nav-link">Sponsor a Child</a></li>
           <li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
-
+          <li class="nav-item"><a href="team.php" class="nav-link">Team</a></li>
 
 
           <?php if(isset($_SESSION['login_user'])){ ?>
@@ -231,13 +231,14 @@
           <div class="row">
             <div class="col-md-4 ftco-animate">
               <div class="cause-entry">
-                <a href="#" class="img" style="background-image: url(images/projects/1.jpg);"></a>
+                <a href="#" class="img" style="background-image: url(images/ladies.JPG);"></a>
                 <div class="text p-3 p-md-4">
-                  <h6><a href="#">Vocational Skills Training</a></h6>
-                  <p>Giving hands on skill training is a great source of livelihood.</p>
+                  <h6><a href="#">Business Startup Training</a></h6>
+                  <p>Training Women on Business Startup Skills and Saving before giving micro-loan.</p>
                 </div>
               </div>
             </div>
+            
             <div class="col-md-4 ftco-animate">
               <div class="cause-entry">
                 <a href="#" class="img" style="background-image: url(images/projects/cause5.JPG);"></a>
@@ -247,15 +248,18 @@
                 </div>
               </div>
             </div>
+
             <div class="col-md-4 ftco-animate">
               <div class="cause-entry">
-                <a href="#" class="img" style="background-image: url(images/projects/4.jpg);"></a>
+                <a href="#" class="img" style="background-image: url(images/ladierice.JPG);"></a>
                 <div class="text p-3 p-md-4">
-                  <h6><a href="#">Education is Key</a></h6>
-                  <p>Skilling for a better life for tomorrow and the future</p>
+                  <h6><a href="#">Micro-Loans</a></h6>
+                  <p>Providing micro-loans to empower women to setup business.</p>
                 </div>
               </div>
             </div>
+       
+            
           </div>
 
         </div>
@@ -327,41 +331,6 @@
     </div>
     </div>
 
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="cause-entry">
-              <a href="#" class="img" style="background-image: url(images/projects/food.jpg);"></a>
-              <div class="text p-3 p-md-4">
-                <h6><a href="#">Food Distribution</a></h6>
-                <p>CEO distributing Food to the vulnerable families during covid-19 lockdown</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="cause-entry">
-              <a href="#" class="img" style="background-image: url(images/cause2.jpg);"></a>
-              <div class="text p-3 p-md-4">
-                <h6><a href="#">Education First</a></h6>
-                <p>Every Child deserves quality education and its our commitment.</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="cause-entry">
-              <a href="#" class="img" style="background-image: url(images/cause3.jpg);"></a>
-              <div class="text p-3 p-md-4">
-                <h6><a href="#">Home Visits</a></h6>
-                <p>CEO visiting Emmanuel who is one of the children under school sponsorship</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- footer partners  -->
     <div class="container"> <div class="center-image" style="margin-top: 2em;"> <img src="images/icons/partners.png" style="display: grid; justify-content: center; height: 100%; width: 100%;" width="1000px" alt=""> </div> </div>
 
